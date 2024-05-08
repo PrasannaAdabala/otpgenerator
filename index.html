@@ -18,7 +18,13 @@
         geth1.style.backgroundColor="green"
         geth1.style.color="white"
         geth1.addEventListener("click",()=>{
-            geth2.innerHTML=Math.floor(Math.random()*9*999)
+            let res=""
+            for(i=0;i<4;i++){
+                res+=Math.floor(Math.random()*9);
+
+            }
+
+            geth2.innerHTML=res
 
         })
        
